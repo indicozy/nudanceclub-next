@@ -26,7 +26,7 @@
   height: 100vh;
   content: "";
   /* you can control opacity of noise  */
-  opacity: 0.08;
+  opacity: 0.05;
   z-index: 1000;
   pointer-events: none;
   background: url(/noise.gif);

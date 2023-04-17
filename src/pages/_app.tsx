@@ -1,6 +1,8 @@
 import { type AppType } from "next/dist/shared/lib/utils";
 
 import { Montserrat } from "next/font/google";
+import { Layout } from "~/components/layout";
+import { Sidebar } from "~/components/sidebar";
 import "~/styles/globals.css";
 
 const mont = Montserrat({
@@ -10,9 +12,9 @@ const mont = Montserrat({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`${mont.variable} font-mont`}>
+    <Layout c={`${mont.variable} font-mont`}>
       <Component {...pageProps} />
-    </main>
+    </Layout>
   );
 };
 
