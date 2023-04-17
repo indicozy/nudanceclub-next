@@ -6,8 +6,8 @@ const ArrowDown: FC = () => {
     <Link href={"/#about"}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="300"
-        height="300"
+        width="200"
+        height="200"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
