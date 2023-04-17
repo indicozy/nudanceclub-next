@@ -29,7 +29,7 @@ const NavigationItem: FC<INote & { toggle: () => void }> = ({
 }) => {
   return (
     <motion.li
-      className="mt-2 font-bold uppercase duration-150"
+      className="mt-2 font-bold uppercase"
       variants={variantsNavigationItem}
     >
       <Link onClick={() => toggle()} href={href}>
