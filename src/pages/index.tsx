@@ -13,9 +13,14 @@ const Home: NextPage = () => {
       </Head>
       <div className="noise"></div>
       <section className="relative h-screen overflow-x-hidden">
-        <h1 className="absolute left-8 top-8 font-hor text-4xl font-bold sm:text-6xl">
-          NU dance club
-        </h1>
+        <div className="absolute left-8 top-8">
+          <h1 className="font-hor text-4xl font-bold sm:text-6xl">
+            NU dance club
+          </h1>
+          <p className="text-sm font-medium text-gray-300 sm:text-lg">
+            A way of creative life since 2018. All rights reserved.
+          </p>
+        </div>
         <div className="absolute left-8 top-32 ml-12 mt-12 text-sm text-gray-200 sm:left-80 sm:top-20 sm:text-lg">
           <div className="relative left-0 top-0 h-screen w-screen">
             <div className="absolute">
@@ -64,9 +69,6 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="absolute bottom-8 left-0 right-0 text-center text-sm font-medium text-gray-300 sm:left-auto sm:right-8 sm:text-xl">
-          A way of creative life since 2018. All rights reserved.
         </div>
       </section>
       <section>
