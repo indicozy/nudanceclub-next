@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                   />
                 </span>
               </div>
-              <div className="group relative left-20 top-[9rem] sm:left-[calc(36rem)] sm:top-[12rem]">
+              <div className="group relative left-20 top-[10rem] sm:left-[calc(36rem)] sm:top-[12rem]">
                 <span className="absolute left-32 top-0 font-hor font-bold group-hover:text-white sm:left-0">
                   partying
                 </span>
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
                   />
                 </span>
               </div>
-              <div className="group relative -left-8 top-[28rem] sm:left-[calc(64rem)] sm:top-8">
+              <div className="group relative -left-8 top-[30rem] sm:left-[calc(64rem)] sm:top-8">
                 {/* <div className="group relative left-20 top-[9rem] sm:left-[calc(36rem)] sm:top-[12rem]"> */}
                 <span className="absolute left-0 top-0 font-hor font-bold group-hover:text-white">
                   dancing
