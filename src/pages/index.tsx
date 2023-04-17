@@ -13,31 +13,31 @@ const Home: NextPage = () => {
       </Head>
       <div className="noise"></div>
       <section className="relative h-screen overflow-x-hidden">
-        <h1 className="absolute left-8 top-8 font-hor text-6xl font-bold">
+        <h1 className="absolute left-8 top-8 font-hor text-4xl font-bold sm:text-6xl">
           NU dance club
         </h1>
-        <div className="absolute left-80 top-32 ml-12 mt-12 text-lg text-gray-200">
+        <div className="absolute left-8 top-32 ml-12 mt-12 text-sm text-gray-200 sm:left-80 sm:top-20 sm:text-lg">
           <div className="relative left-0 top-0 h-screen w-screen">
             <div className="absolute">
-              <div className="group relative">
+              <div className="group relative -left-[2rem] top-[0rem] sm:top-20">
                 <span className="absolute left-0 top-0 font-hor font-bold group-hover:text-white">
                   practicing
                 </span>
-                <span className="absolute left-10 top-10 w-[40rem]">
+                <span className="absolute left-6 top-6 w-[12rem] sm:left-10 sm:top-10 sm:w-[40rem]">
                   <Image
                     src="/images/1.webp"
                     width={500}
                     height={500}
                     alt="NU dance club"
-                    className="max-h-[40rem] max-w-[40rem] shadow-2xl shadow-gray-400"
+                    className="shadow-2xl shadow-gray-400"
                   />
                 </span>
               </div>
-              <div className="group relative left-[calc(40rem)] top-20">
-                <span className="absolute left-0 top-0 font-hor font-bold group-hover:text-white">
+              <div className="group relative left-20 top-[9rem] sm:left-[calc(36rem)] sm:top-[12rem]">
+                <span className="absolute left-32 top-0 font-hor font-bold group-hover:text-white sm:left-0">
                   partying
                 </span>
-                <span className="absolute left-10 top-10 w-[20rem]">
+                <span className="absolute left-6 top-6 w-[12rem] sm:left-10 sm:top-10 sm:w-[20rem]">
                   <Image
                     src="/images/10.webp"
                     width={500}
@@ -47,11 +47,12 @@ const Home: NextPage = () => {
                   />
                 </span>
               </div>
-              <div className="group relative left-[calc(70rem)] top-8">
+              <div className="group relative -left-8 top-[28rem] sm:left-[calc(64rem)] sm:top-8">
+                {/* <div className="group relative left-20 top-[9rem] sm:left-[calc(36rem)] sm:top-[12rem]"> */}
                 <span className="absolute left-0 top-0 font-hor font-bold group-hover:text-white">
                   dancing
                 </span>
-                <span className="absolute left-10 top-10 w-[40rem]">
+                <span className="absolute left-6 top-6 w-[12rem] sm:left-10 sm:top-10 sm:w-[40rem]">
                   <Image
                     src="/images/9.webp"
                     width={500}
@@ -64,7 +65,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-8 left-8 text-xl font-medium text-gray-300">
+        <div className="absolute bottom-8 left-0 right-0 text-center text-sm font-medium text-gray-300 sm:left-auto sm:right-8 sm:text-xl">
           A way of creative life since 2018. All rights reserved.
         </div>
       </section>
