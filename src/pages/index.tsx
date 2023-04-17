@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import ArrowDown from "~/components/ArrowDown";
 
 const Home: NextPage = () => {
   return (
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
                 <span className="absolute left-0 top-0 font-hor font-bold group-hover:text-white">
                   practicing
                 </span>
-                <span className="absolute left-6 top-6 w-[12rem] sm:left-10 sm:top-10 sm:w-[40rem]">
+                <span className="absolute left-6 top-6 w-[14rem] sm:left-10 sm:top-10 sm:w-[40rem]">
                   <Image
                     src="/images/1.webp"
                     width={500}
@@ -38,7 +39,7 @@ const Home: NextPage = () => {
                   />
                 </span>
               </div>
-              <div className="group relative left-20 top-[10rem] sm:left-[calc(36rem)] sm:top-[12rem]">
+              <div className="group relative left-24 top-[10rem] sm:left-[calc(36rem)] sm:top-[12rem]">
                 <span className="absolute left-32 top-0 font-hor font-bold group-hover:text-white sm:left-0">
                   partying
                 </span>
@@ -57,7 +58,7 @@ const Home: NextPage = () => {
                 <span className="absolute left-0 top-0 font-hor font-bold group-hover:text-white">
                   dancing
                 </span>
-                <span className="absolute left-6 top-6 w-[12rem] sm:left-10 sm:top-10 sm:w-[40rem]">
+                <span className="absolute left-6 top-6 w-[14rem] sm:left-10 sm:top-10 sm:w-[40rem]">
                   <Image
                     src="/images/9.webp"
                     width={500}
@@ -69,6 +70,9 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="absolute bottom-80 left-8 mb-8 sm:bottom-24 sm:mb-0">
+          <ArrowDown />
         </div>
       </section>
       <section>
