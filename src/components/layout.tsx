@@ -34,12 +34,7 @@ export const Layout = ({ children, c }: { children: ReactNode; c: string }) => {
   return (
     <>
       <div className="noise"></div>
-      {width < 768 ? (
-        <Header isRouterLoading={isRouterLoading} />
-      ) : (
-        <Sidebar isRouterLoading={isRouterLoading} />
-      )}
-      <main className={`mx-2 mt-20 sm:ml-28 sm:mt-0 ${c}`}>{children}</main>
+      <main className={`${c}`}>{children}</main>
     </>
   );
 };

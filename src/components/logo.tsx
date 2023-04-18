@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Logo = () => {
   return (
-    <div className="font-runs grid h-12 w-12 place-items-center text-xl leading-none">
+    <div className="font-runs grid h-16 w-16 place-items-center text-xl leading-none">
       <Image
         src={"/logo.png"}
         width={400}
