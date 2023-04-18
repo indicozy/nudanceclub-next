@@ -3,6 +3,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Marquee from "react-fast-marquee";
 import ArrowDown from "~/components/ArrowDown";
 import Logo from "~/components/logo";
 import { navigation } from "~/data/navigation";
@@ -60,7 +61,7 @@ const Home: NextPage = () => {
               <ArrowDown />
             </div>
           </div>
-          <div className="shadow-2xl shadow-yellow-500 sm:block sm:w-[38%]">
+          <div className="shadow-2xl shadow-yellow-300 sm:block sm:w-[38%]">
             <Image
               src={"/images/6.webp"}
               height={1000}
@@ -82,7 +83,7 @@ const Home: NextPage = () => {
                 height={1000}
                 width={1000}
                 alt="nu dance club"
-                className="shadow-2xl shadow-cyan-500"
+                className="shadow-2xl shadow-sky-300"
               />
             </div>
             <div>
@@ -161,51 +162,18 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section id="events">
-        <div className="mx-auto max-w-screen-xl px-4 py-8">
-          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2">
-            <div className="m-8">
-              <Image
-                src={"/images/3.webp"}
-                height={1000}
-                width={1000}
-                alt="nu dance club"
-                className="shadow-2xl shadow-cyan-500"
-              />
-            </div>
-            <div>
-              <h2 className="mb-8 font-hor text-4xl font-bold">About us</h2>
-              <div className="ml-2 space-y-6 border-l border-l-black py-4 pl-4 italic">
-                <div>
-                  NUDC has been an active student club ever since Nazarbayev
-                  University was founded.
-                </div>
-                <div>
-                  NU Dance Club continuously shows its genuine commitment to
-                  promoting dance culture among the students of NU by organizing
-                  various events including dance festivals and contests like the
-                  NU Dance Cup, workshops, and performances, to showcase the
-                  beauty of dance and inspire students to learn and explore
-                  various dance styles.
-                </div>
-                <div>
-                  Moreover, NU Dance Club has also been actively participating
-                  in various dance competitions at both the national and
-                  international levels, representing the university with its
-                  outstanding performances. Our club has also always been a
-                  source of entertainment for the university community,
-                  delivering mesmerizing and captivating performances at various
-                  university events.
-                </div>
-              </div>
-              <div>
-                <div className="mt-4">
-                  <span className="font-medium">Aruzhan Umar</span> - Head of NU
-                  Dance Club
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Marquee speed={40}>
+          {[1, 2, 3, 4, 5, 7, 8, 9].map((n, i) => (
+            <Image
+              key={i}
+              src={`/images/${n}.webp`}
+              height={600}
+              width={600}
+              alt="nu dance club"
+              className="mx-4"
+            />
+          ))}
+        </Marquee>
       </section>
       <section id="recruitment" className="">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
@@ -235,6 +203,7 @@ const Home: NextPage = () => {
               height={1000}
               width={1000}
               alt="nu dance club"
+              className="shadow-2xl shadow-violet-300"
             />
           </div>
         </div>
